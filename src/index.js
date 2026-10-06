@@ -12,11 +12,11 @@ import { Resend } from "resend";
 
 export default {
 	async fetch(request, env, ctx) {
-		const resend = new Resend("your_resend_api_key");
+		const resend = new Resend("re_QAxTqK8K_ABzBfyDafx1EQPn5yhXVKjNj");
 
 		const { data, error } = await resend.emails.send({
-			from: "hello@example.com",
-			to: "someone@example.com",
+			from: "david.brooke14@gmail.com,",
+			to: "email@djbrooke.uk",
 			subject: "Hello World",
 			html: "<p>Hello from Workers</p>",
 		});
