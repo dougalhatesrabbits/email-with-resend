@@ -12,7 +12,7 @@ import { Resend } from "resend";
 
 export default {
 	async fetch(request, env, ctx) {
-		const resend = new Resend("re_QAxTqK8K_ABzBfyDafx1EQPn5yhXVKjNj");
+		const resend = new Resend(env.RESEND_API_KEY);
 
 		const { data, error } = await resend.emails.send({
 			from: "david.brooke14@gmail.com,",
