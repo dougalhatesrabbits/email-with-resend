@@ -15,7 +15,7 @@ export default {
 		const resend = new Resend(env.RESEND_API_KEY);
 
 		const { data, error } = await resend.emails.send({
-			from: "david.brooke14@gmail.com,",
+			from: "home@djbrooke.uk",
 			to: "email@djbrooke.uk",
 			subject: "Hello World",
 			html: "<p>Hello from Workers</p>",
